@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player">
+        <p id="count" class="count"></p>
+        <div class="image" id="image"></div>
+        <div class="detail">
+            <h1 class="name"></h1>
+            <h3 class="artist">
+            </h3>
+
+        </div>
+        <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100"
+              value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration">00:00</div>
+          </div>
+
+        <div class="controll">
+<div class="pre">
+    <img src="assets/image/previous.png" alt="" srcset="" onclick="playPrevious()">
+</div>
+<div class="play" id="playbtn" >
+    <img src="assets/image/play.png"onclick="playAudio()" alt="" srcset="">
+</div>
+<div class="next" >
+    <img src="assets/image/next.png" alt="" srcset="" onclick="playNext()">
+</div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
